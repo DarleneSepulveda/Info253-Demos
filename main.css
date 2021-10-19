@@ -1,18 +1,40 @@
 body{
   font-family: sans-serif;
 }
-h1{
+h1#site-title{
   color: #b02a5b;
-  font-size: 40px;
+  font-size: 50px;
   line-height: 5px;
+  text-align: center;
+}
+p#update-line{
+  font-size: 15px;
+  color: #4e33b0;
+  text-align: center;
+}
+h1#article-title{
+  color: #871f84;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+h2#article-author{
+  color: #5c145a;
+  font-size: 22px;
+  line-height: 5px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 nav ul{
   display: flex;
+  justify-content: center;
   list-style: none;
   padding-left: 0px;
   background-color: #8c4c8b;
   padding: 8px;
-  gap: 5px;
+  gap: 30px;
 }
 nav ul li a{
   color: white;
@@ -20,26 +42,44 @@ nav ul li a{
   padding: 8px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
+  text-align: center;
 }
 nav ul li a:hover{
   background-color: #8f1b8d;
 }
-figure img{
+figure#top-image{
+  margin-left: 540px;
+  border: 3px solid #5e5461;
+  background-color: #efd7f5;
+  margin-right: 540px;
+  padding: 10px;
+  margin-bottom: 40px;
+}
+figure.right-images{
+  margin-right: 220px;
+}
+.main-image{
   width: 400px;
   height: auto;
 }
-p img{
-  width: 150px;
+.section-image{
+  width: 200px;
   height: auto;
-  float: left;
   border: 3px solid black;
-  margin-right: 5px;
   margin-bottom: 5px;
+  float: right;
 }
-article p:last-child{
+.section{
+  font-size: 17px;
+  text-align: left;
+  margin-left: 225px;
+  margin-right: 225px;
+}
+.section.poem{
   background-color: #f5d7e1;
-}
-article header p{
-  color: #4e33b0;
+  text-align: left;
+  font-size: 17.5px;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
