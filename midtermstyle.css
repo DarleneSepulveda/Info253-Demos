@@ -32,7 +32,7 @@ nav{
   background-color: lightgrey;
   margin-top: 20px;
 }
-nav p{
+#nav-title{
   font-size: 18px;
   font-weight: bold;
   padding-left: 20px;
@@ -87,7 +87,7 @@ h6{
   line-height: 0px;
   margin-bottom: 15px;
   margin-top: 15px;
-  color: red;
+  color: darkred;
 }
 main{
   margin-left: 280px;
@@ -108,7 +108,7 @@ main ul{
 }
 footer{
   margin-top: 50px;
-  background-color: red;
+  background-color: darkred;
   color: white;
   padding: 5px;
   text-align: center;
