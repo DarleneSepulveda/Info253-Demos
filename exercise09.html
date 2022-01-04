@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title> My "Hello World" Webpage </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,400&display=swap"
+     rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width">
+    <script>
+
+      function menuToggle() {
+        var x = document.getElementById("nav-list");
+        if( x.style.display === "block") {
+          x.style.display = "none";
+          document.getElementById("menu-icon").style.opacity = "1";
+        }
+        else if(document.getElementById("menu-icon").style.overflow = "hidden"){
+          x.style.display = "block";
+        }
+        else{
+          x.style.display = "block";
+          document.getElementById("menu-icon").style.opacity = "0.75";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <article>
+      <header>
+          <figure>
+            <img
+            src="https://dejpknyizje2n.cloudfront.net/svgcustom/clipart/preview/crescent-moon-sticker-30959-300x300.png"
+            alt="A drawing of a moon." id="logo">
+          </figure>
+          <h1 id="site-title"> Hello World </h1>
+          <p id="update-line">
+            <b><i> Update 2.1 </i></b> Navigational Changes.
+          </p>
+          <nav>
+             <input type ="image" src="https://www.pikpng.com/pngl/b/425-4251166_menu-bar-icon-white-clipart.png"
+             name="menu" alt="Menu Icon"
+             id="menu-icon" onclick="menuToggle()"/>
+             <div id="nav-list">
+              <ul>
+                <li><a href="index.html"> Exercise 1</a></li>
+                <hr>
+                <li><a href="exercise02.html"> Exercise 2</a></li>
+                <hr>
+                <li><a href="exercise03.html"> Exercise 3</a></li>
+                <hr>
+                <li><a href="https://www.youtube.com/playlist?list=OLAK5uy_m8MyGWEwJe9Th5kDicGaeqZBahNJI1KAI"
+                  target="_blank">
+                   Music Playlist </a></li>
+              </ul>
+            </div>
+
+          </nav>
+      </header>
+       <main>
+         <div class="article-content">
+            <h1 id="article-title"> Bad Poetry </h1>
+            <h2> A collection of bad poems written by yours truly.</h2>
+            <h3 id="author"> Darlene Sepulveda</h3>
+            <h3 id="date"> 09/06/2021 </h3>
+          </div>
+            <figure id="top-image">
+              <img
+              src="https://rachellerch.com/wp-content/uploads/2017/10/CloudsMoonMoodBLOG.jpg"
+              alt="A picture of the moon.">
+              <figcaption> <b> Figure 1.0 </b> Representation of the night. </figcaption>
+            </figure>
+          <div class="article-content">
+            <h4> The following are effortless poems, with grammatical errors: </p>
+            <div class="poems">
+              <h5> Midnight </h5>
+              <figure>
+                <img
+                src="https://bloximages.newyork1.vip.townnews.com/roanoke.com/content/tncms/assets/v3/editorial/4/d4/4d4438ec-0958-56b9-8832-ac1486cda4f8/5bd738d346d4f.image.jpg?crop=1609%2C905%2C0%2C190&resize=1120%2C630&order=crop%2Cresize"
+                alt="A picture of a cat."  class="section-image">
+              </figure>
+              <p>
+                Midnight, is the time where black cats roam,
+                where luck is lost and forests are not homes. <br>
+                Midnight, is a form of quiet, as people go and rest,
+                sleep is their own makeshift diet. <br>
+                Midnight, is when people lie awake, restless and sweaty,
+                their bed is too warm, their mind isn't steady. <br>
+                Midnight, is students, who lie awake and study,
+                turning assignments in late, when they know it isn't <b> ready. </b>
+              </p>
+            </div>
+            <div class="poems">
+              <h5> Computer Work </h5>
+              <figure>
+                <img
+                src="https://www.lifewire.com/thmb/ThIDy9K3oMUSuF4WTb7vVVh8PKQ=/774x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/xxl-desktop-pc-98013994-5c4dcc47c9e77c0001380389.jpg"
+                alt="A picture of a computer."  class="section-image">
+              </figure>
+              <p>
+                Unsteady eyes and pounding heads,
+                Warm pillows and comfy beds. <br>
+                Intense typing and sore backs,
+                Fighting the urge to have a snack. <br>
+                Aching shoulders and numb feet,
+                the whirring fan from the heat. <br>
+                Suffering from eye strain,
+                computer work can be a drain.
+              </p>
+            </div>
+          </div>
+      </main>
+    </article>
+    <footer id="footer">
+      <a href="#site-title" id="top-link"> Back To Top</a>
+      <p>Hello World Update 2.0</p>
+      <p>Copyright 2021</p>
+    </footer>
+  </body>
+</html>

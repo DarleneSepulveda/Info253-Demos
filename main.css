@@ -28,8 +28,34 @@ img{
 }
 #update-line{
   padding-left: 50px;
-  font-size: 94%;
+  font-size: 98%;
   padding-right: 20px;
+}
+#menu-icon{
+  display:block;
+  width:50px;
+  padding: 1px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav-list{
+  display:none;
+  overflow: hidden;
+  background-color: #322F44;
+  margin-left: auto;
+  margin-right: auto;
+  width:40%;
+  height:auto;
+  position: relative;
+  animation-name: slide;
+  animation-duration: .5s;
+  border: 1px #322F44;
+}
+@keyframes slide{
+  0%{left:0px; top:0px;}
+  50%{left:0px; top:13px;}
+  100%{left:0px; top:0px;}
 }
 nav ul{
   list-style: none;
@@ -37,19 +63,22 @@ nav ul{
 }
 nav ul li a{
   color: white;
-  padding: 8px;
-  text-decoration: underline;
+  padding-bottom: .25px;
+  text-decoration: none;
   font-weight: bold;
   font-size: 150%;
   padding-left: 0px;
+  text-align: center;
 }
 nav ul li a:hover{
   color:#B2A3B5;
 }
-@media all and (min-width: 900px){
-#update-line{
-  float:left;
-}
+hr{
+  height:1px;
+  border-width: 1px;
+  color:#656372;
+  background-color:#656372;
+  border-color: #656372;
 }
 .article-content{
 margin: 4% 8.75%;
@@ -123,34 +152,60 @@ footer{
   text-align: center;
   padding: 1%;
 }
-footer nav ul{
-  list-style: none;
-  gap: 2%;
-  font-size: 95%;
-  font-weight: none;
-  padding-bottom: 1%;
+#top-link{
+  text-decoration: none;
+  color: white;
+  font-weight:bold;
+  font-size: 105%;
 }
+ #top-link:hover{
+ color:#1D1A31;
+ text-decoration: underline;
+ }
 nav ul li a:hover{
   color:#B2A3B5;
 }
-@media all and (min-width: 415px){
-  #update-line{
-    font-size: 110%;
+@media all and (min-width: 900px){
+#update-line{
+  float:left;
+}
+}
+@media all and (min-width: 700px){
+  nav ul{
+    gap: 1%;
+  }
+}
+@media all and (min-width: 400px){
+  #menu-icon{
+    display:none;
+  }
+  #nav-list{
+    width:auto;
+    display: block;
+    overflow:hidden;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    animation-duration: 0s;
   }
   nav ul{
     display: flex;
     justify-content: right;
+    gap: 1%;
   }
   nav ul li a{
     font-size: 110%;
     text-decoration: none;
   }
-  footer nav ul{
-    display: flex;
-    justify-content: center;
+  #menu-icon{
+    display: none;
+  }
+  hr{
+    height:0px;
+    border-width: 0px;
   }
 }
-@media all and (max-width: 415px){
+@media all and (max-width: 399px){
   nav ul{
     text-align: center;
 }
