@@ -30,13 +30,14 @@ nav{
   padding: 10px 150px 5px 80px;
 }
 nav ul{
-  margin-top: -50px;
   list-style: none;
-  display: flex;
-  justify-content: right;
   gap: 60px;
   font-size: 20px;
   font-weight:bold;
+}
+#navi{
+  display:none;
+  margin-left: 140px;
 }
 nav a{
   color: white;
@@ -54,8 +55,7 @@ nav a:hover{
   width:50px;
   padding: 1px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 .discover{
   display: block;
@@ -118,14 +118,14 @@ h4{
 .large-content{
   color: white;
   background-color: #000076;
-  width: 1132px;
   height: 457px;
   text-align: center;
   display: block;
-  margin: 25px 185px 25px 185px;
+  margin: 2% 12%;
   border: solid #44008B 15px;
 }
 .hours .main-image{
+  display:none;
   margin: 3px 0px 0px 90px;
   width: 500px;
   height:auto;
@@ -156,7 +156,8 @@ h4{
 .is-open{
   font-size: 20px;
   background-color: #9F45B0;
-  margin: 3px 0px 0px 680px;
+  margin-left: auto;
+  margin-right: auto;
   border: solid #44008B 0px;
   height: 20px;
   width: 366px;
@@ -181,13 +182,12 @@ h4{
 }
 .day{
   font-weight: bold;
-  margin:10px 0px 0px 680px;
   float: left;
-  padding : 0;
+  text-align: center;
+
 }
 .time{
   font-weight: bold;
-  margin:10px 0px 0px 680px;
   padding-left: 280px;
 }
 .event{
@@ -327,4 +327,35 @@ footer p:nth-child(2n+1){
   float:right;
   margin-top: -20px;
   margin-right: 60px;
+}
+@media all and (min-width: 1450px){
+  #menu-icon{
+    display:none;
+  }
+  #navi{
+    display:block;
+  }
+  nav ul{
+    display:flex;
+    margin-top: -50px;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 60px;
+    font-size: 20px;
+    font-weight:bold;
+  }
+  .hours .main-image{
+    display: block;
+  }
+  .is-open{
+    margin: 3px 0px 0px 680px;
+  }
+  .day{
+      margin:10px 0px 0px 680px;
+      padding : 0;
+  }
+  .time{
+      margin:10px 0px 0px 680px;
+  }
 }

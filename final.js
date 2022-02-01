@@ -24,7 +24,7 @@ else if(endhours === true && enddays === true) {
   }
 
   function menuToggle() {
-    var x = document.getElementById("nav-list");
+    var x = document.getElementById("navi");
     if( x.style.display === "block") {
       x.style.display = "none";
       document.getElementById("menu-icon").style.opacity = "1";
