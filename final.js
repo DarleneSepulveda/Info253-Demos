@@ -22,3 +22,18 @@ else if(endhours === true && enddays === true) {
     document.getElementById("closed").style.display = "block";
     document.getElementById("open").style.display = "none";
   }
+
+  function menuToggle() {
+    var x = document.getElementById("nav-list");
+    if( x.style.display === "block") {
+      x.style.display = "none";
+      document.getElementById("menu-icon").style.opacity = "1";
+    }
+    else if(document.getElementById("menu-icon").style.overflow = "hidden"){
+      x.style.display = "block";
+    }
+    else{
+      x.style.display = "block";
+      document.getElementById("menu-icon").style.opacity = "0.75";
+    }
+  }
